@@ -56,7 +56,7 @@ namespace OTS_Supermarket.Test
             Assert.That(cart.Size, Is.EqualTo(0));
             Assert.That(cart.Amount, Is.EqualTo(0));
         }
-
+        //
 
         [Test]
         public void Calculate_ShouldThrowException_WhenDateIsInPast()
@@ -69,7 +69,7 @@ namespace OTS_Supermarket.Test
             // ACT & ASSERT
             Assert.Throws<Exception>(() => cart.Calculate(invalidDate, 2000));
         }
-
+        
 
 
         [Test]
